@@ -1,6 +1,4 @@
-# aws-serverless-samfarm
-This repo contains the full code and templates needed to create a the Serverless SamFarm demo as shown in the What's New with AWS Lambda presentation at Re:Invent 2016.
-
+# aws-serverless- jonholder
 There are three separate parts to this application: the api, the pipeline which detects, builds, and deploys changes, and the website. 
 Lets start by getting that website up and running.
 
@@ -118,4 +116,3 @@ var samCount = 15;
 
 Commit and push the changes. 
 
-Go back to the pipeline we generated in Step 3, you will see AWS CodePipeline automatically pick up your change, and start the build and deploy process. Voila! A completely version controlled, serverless, CI/CD solution to give a squirrel a few friends. Technology!
