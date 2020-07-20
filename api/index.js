@@ -16,9 +16,9 @@ exports.handler = (event, context, callback) => {
 
     var totalSAMs = samCount * samMultiplier;
 
-    console.log('The number of SAMs to show: ' + samCount);
+    console.log('The number of jons to show: ' + jonCount);
     console.log('Multiplier to apply to SAMs: ' + samMultiplier);
-    console.log('Total number of SAMs to show: ' + totalSAMs);
+    console.log('Total number of jons to show: ' + totaljons);
 
     callback(null, {
         "statusCode": 200,
