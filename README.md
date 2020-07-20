@@ -1,4 +1,4 @@
-# aws-serverless-samfarm
+# aws-serverless- jonholder
 There are three separate parts to this application: the api, the pipeline which detects, builds, and deploys changes, and the website. 
 Lets start by getting that website up and running.
 
