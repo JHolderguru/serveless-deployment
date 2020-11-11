@@ -1,8 +1,8 @@
 # aws-serverless- jonholder
-There are three separate parts to this application: the api, the pipeline which detects, builds, and deploys changes, and the website. 
+There are three separate parts to this application: the api, the pipeline which detects, builds, and deploys changes, and the website.
 Lets start by getting that website up and running.
 
-## Step 1
+#### Step 1
 
 ### Website
 In the [website directory](website/) there are four files:
@@ -16,9 +16,9 @@ To create the website stack.
 
 [<img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png">](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=myteststack&templateURL=https://awscomputeblogimages.s3-us-west-2.amazonaws.com/samfarm-website.yaml)
 
-Once the stack is complete, we will need to keep track of the S3 bucket name and the URL for the website. 
+Once the stack is complete, we will need to keep track of the S3 bucket name and the URL for the website.
 
-Now we have all the seperate parts of our website, but lets get SAM up and running:
+Now we have all the separate parts of our website, but lets get SAM up and running:
 
 ```bash
 sh upload_website.sh <s3-bucket-name>
@@ -33,7 +33,7 @@ Ta-da, a working website! SAM the squirrel may be all alone right now, but we'll
 
 ## Step 2
 ### API
-The Serverless API we are building! The [api directory](api/) contains five files. 
+The Serverless API we are building! The [api directory](api/) contains five files.
 
 1. **[beta.json](api/beta.json):** The CloudFormation staging file. This will be used by CloudFormation to pass parameters to our CloudFormation template.
 2. **[buildspec.yml](api/buildspec.yml):** This is used by CodeBuild in the build step of our pipeline. We will get to that later.
@@ -114,5 +114,4 @@ to
 var samCount = 15;
 ```
 
-Commit and push the changes. 
-
+Commit and push the changes.
