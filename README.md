@@ -1,8 +1,8 @@
-# aws-serverless- jonholder
+## aws-serverless- jonholder
 There are three separate parts to this application: the api, the pipeline which detects, builds, and deploys changes, and the website.
 Lets start by getting that website up and running.
 
-#### Step 1
+## Step 1
 
 ### Website
 In the [website directory](website/) there are four files:
@@ -33,6 +33,7 @@ Ta-da, a working website! SAM the squirrel may be all alone right now, but we'll
 
 ## Step 2
 ### API
+
 The Serverless API we are building! The [api directory](api/) contains five files.
 
 1. **[beta.json](api/beta.json):** The CloudFormation staging file. This will be used by CloudFormation to pass parameters to our CloudFormation template.
